@@ -112,14 +112,6 @@ let NERDTreeShowLineNumbers=0
 let NERDTreeWinSize=30
 let NERDTreeHijackNetrw=1
 
-"" specky
-let g:speckyRunSpecCmd = "bundle exec rspec -r ~/.vim/bundle/vim-specky/ruby/specky_formatter.rb -f SpeckyFormatter"
-let g:speckyQuoteSwitcherKey = "<leader>'"
-let g:speckySpecSwitcherKey  = "<leader>x"
-let g:speckyRunSpecKey       = "<leader>s"
-let g:speckyRunRdocCmd       = "fri -L -f plain"
-let g:speckyWindowType       = 2
-
 filetype plugin indent on
 
 "" ack grep
