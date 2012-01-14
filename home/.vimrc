@@ -67,7 +67,7 @@ set nobackup
 set directory=~/.vim/tmp
 
 " make the status line more informative
-" set laststatus=2
+set laststatus=2
 " set statusline=%<buf:[%n]\ %f\ %h%m%r " buffer, filename, flags
 " set statusline+=\ \ [
 " set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
