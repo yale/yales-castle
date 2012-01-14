@@ -2,7 +2,7 @@ My Castle
 =========
 This is where I store my dotfiles. I use homesick to keep everything in sync.
 
-Download Homesick
+Install Homesick
 -----------------
 https://github.com/technicalpickles/homesick
 
