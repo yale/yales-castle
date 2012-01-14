@@ -91,19 +91,13 @@ map <down> <C-w>j
 map <right> <C-w>l
 map <left> <C-w>h
 
-"" identify the syntax highlighting group used at the cursor
-"" http://vim.wikia.com/wiki/Identify_the_syntax_highlighting_group_used_at_the_cursor
-map <leader>hig :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-
 " plugins
 "" autocomplpop
 let g:acp_behaviorKeywordLength=4
 let g:acp_behaviorFileLength=4
 
 "" NERDTree
-map <leader>d :NERDTreeToggle<CR>
+map <leader>d :NERDTreeToggle<CR><CR>
 let NERDTreeCaseSensitiveSort=1
 let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$','\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git','\.pyc','\.pyo','log','tmp','coverage']
@@ -113,10 +107,6 @@ let NERDTreeWinSize=30
 let NERDTreeHijackNetrw=1
 
 filetype plugin indent on
-
-"" ack grep
-set grepprg=ack\ --cpp\ --cc\ --perl\ --python\ --make
-map <leader>g :grep <C-R>=expand("<cword>")<CR><CR>
 
 "" rvm fix
 set shell=/bin/sh
