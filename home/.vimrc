@@ -115,6 +115,6 @@ au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 au BufEnter *.org            call org#SetOrgFileType()
 
 "" Tagbar
-let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
-let g:tagbar_width=26                          " Default is 40, seems too wide
-noremap <silent> <Leader>y :TagbarToggle       " Display panel with \y (or ,y)
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+let g:tagbar_width=26
+noremap <silent> <Leader>y :TagbarToggle
