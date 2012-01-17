@@ -90,7 +90,7 @@ let g:acp_behaviorKeywordLength=4
 let g:acp_behaviorFileLength=4
 
 "" NERDTree
-map <leader>d :NERDTreeToggle<CR><CR>
+map <leader>d :NERDTreeToggle<CR>
 let NERDTreeCaseSensitiveSort=1
 let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$','\.[ao]$','\.swp$','\.DS_Store','\.svn','\.CVS','\.git','\.pyc','\.pyo','log','tmp','coverage']
@@ -117,4 +117,4 @@ au BufEnter *.org            call org#SetOrgFileType()
 "" Tagbar
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 let g:tagbar_width=26
-noremap <silent> <Leader>y :TagbarToggle
+noremap <silent> <Leader>y :TagbarToggle<CR>
