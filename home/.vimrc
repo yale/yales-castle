@@ -113,7 +113,7 @@ set shell=/bin/sh
 
 "" CtrlP
 let g:ctrlp_map = '<leader>t'
-let g:ctrlp_cmd = 'LeaderT'
+let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 2
 set wildignore+=*/.git/
 
