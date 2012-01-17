@@ -68,14 +68,7 @@ set directory=~/.vim/tmp
 
 " make the status line more informative
 set laststatus=2
-" set statusline=%<buf:[%n]\ %f\ %h%m%r " buffer, filename, flags
-" set statusline+=\ \ [
-" set statusline+=%{strlen(&ft)?&ft:'none'} " filetype
-" set statusline+=]\ "
-" set statusline+=%#warningmsg#
-" set statusline+=%*
-" set statusline+=%=
-" set statusline+=\ [%3.(%c%)\ %-7.(%l/%L%)]\ %P
+let g:Powerline_symbols = 'fancy'
 
 " a few useful shortcuts
 command! Rehash source ~/.vimrc
