@@ -109,6 +109,8 @@ let g:ctrlp_map = '<leader>t'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 2
 set wildignore+=*/.git/
+map <leader>b :CtrlPBuffer<CR>
+map <leader>m :CtrlPMRUFiles<CR>
 
 "" VimOrganizer
 au! BufRead,BufWrite,BufWritePost,BufNewFile *.org 
