@@ -1,3 +1,5 @@
+let g:pathogen_disabled = []
+call add(g:pathogen_disabled, 'unicode-haskell')
 call pathogen#infect()
 colorscheme ir_black
 
