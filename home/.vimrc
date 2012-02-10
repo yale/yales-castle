@@ -122,3 +122,6 @@ au BufEnter *.org            call org#SetOrgFileType()
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 let g:tagbar_width=26
 noremap <silent> <Leader>y :TagbarToggle<CR>
+
+"" Fugitive
+map <leader>g :Gstatus<CR>
