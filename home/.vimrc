@@ -125,3 +125,6 @@ noremap <silent> <Leader>y :TagbarToggle<CR>
 
 "" Fugitive
 map <leader>g :Gstatus<CR>
+
+"" RABL
+au BufRead,BufNewFile *.rabl setf ruby
