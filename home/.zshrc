@@ -41,4 +41,4 @@ if [ -f ~/.profile ]; then
 fi
 
 export ZSH=$HOME/.oh-my-zsh
-
+export DISABLE_WEEKLY_UPDATES="true"
