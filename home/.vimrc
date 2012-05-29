@@ -1,12 +1,23 @@
 let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'unicode-haskell')
 call pathogen#infect()
-colorscheme ir_black
+
+"let g:solarized_termcolors=256
+let g:solarized_termtrans =  1 
+let g:solarized_bold = 1
+let g:solarized_contrast = "normal" 
+let g:solarized_visibility= "high"
+
+colorscheme solarized
+set background=dark
 
 " enable filetype specifics
 filetype on
 filetype plugin on
 filetype indent on
+
+" vim-slime
+let g:slime_target = "tmux"
 
 " syntax highlight
 syntax on
@@ -22,6 +33,7 @@ set textwidth=80
 
 " encoding it UTF-8 no matter what the term says
 set encoding=utf-8
+set term=screen-256color
 
 " make command line two lines high
 set ch=2
