@@ -1,0 +1,18 @@
+# ~/.tmuxinator/newslook.yml
+# you can make as many tabs as you wish...
+
+project_name: newslook
+project_root: ~/Sites/newslook
+tabs:
+  - dev:
+      layout: a15b,238x79,0,0{120x79,0,0,0,117x79,121,0[117x39,121,0,3,117x19,121,40,4,117x19,121,60,5]}
+      panes:
+        - vim
+        - bundle exec guard
+        - top
+        - # shell
+  - shell: 'git status && git fetch'
+  - server: 'bundle exec rake sunspot:solr:start && bundle exec rails s'
+  #- logs: tail -f log/development.log
+  #- capistrano:
+  #- remote: ssh me@myhost
