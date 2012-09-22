@@ -92,12 +92,6 @@ command! Helptags helptags ~/.vim/doc
 "" clear search highlights
 nmap <silent> ,/ :nohlsearch<CR>
 
-"" make the arrow keys switch between splits
-map <up> <C-w>k
-map <down> <C-w>j
-map <right> <C-w>l
-map <left> <C-w>h
-
 " plugins
 "" autocomplpop
 let g:acp_behaviorKeywordLength=4
@@ -140,3 +134,9 @@ map <leader>g :Gstatus<CR>
 
 "" RABL
 au BufRead,BufNewFile *.rabl setf ruby
+
+"" relative line numbers
+set relativenumber
+
+""
+nnoremap - :Switch<cr>
