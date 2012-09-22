@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="yale"
+ZSH_THEME="gallois"
 
 # Example aliases
 alias zshrc="vim ~/.zshrc"
@@ -34,7 +34,6 @@ plugins=(node rails3 rails rvm git textmate gem brew osx git-flow vim vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 
 if [ -f ~/.profile ]; then
   source ~/.profile
@@ -42,3 +41,9 @@ fi
 
 export ZSH=$HOME/.oh-my-zsh
 export DISABLE_WEEKLY_UPDATES="true"
+
+bindkey -v
+bindkey '\e[3~' delete-char
+bindkey '^R' history-incremental-search-backward
+
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$PWD")'
