@@ -56,8 +56,8 @@ set splitright " split new window to the right of current window
 set nojoinspaces " use just one space to join strings
 
 " tab/indentation configuration
-set softtabstop=2
-set shiftwidth=2
+"set softtabstop=2
+"set shiftwidth=2
 set expandtab
 set smarttab
 set autoindent
