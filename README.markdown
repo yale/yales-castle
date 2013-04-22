@@ -15,4 +15,9 @@ Contents
 * .vimrc
 * .gemrc
 * .irbrc
+* .ssh/
 * .vapir_config.yml
+
+Want a fork?
+------------
+Before syncing with homesick, delete my SSH public key and replace it with your own.
