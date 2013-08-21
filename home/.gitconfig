@@ -1,6 +1,6 @@
 [user]
-  name = Yale Spector
-  email = yspector@mdsol.com
+	name = Yale Spector
+	email = yale.spector@gmail.com
 [color]
   ui = true
 [color "branch"]
@@ -38,10 +38,13 @@
   # the usual default is to push all branches
   default = tracking 
 [core]
-  excludesfile = ~/.gitignore_global
+	excludesfile = /Users/yale/.gitignore_global
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
   path = 
 [mergetool "sourcetree"]
   cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
+[github]
+	user = yale
+	password = 1p6h1i8
